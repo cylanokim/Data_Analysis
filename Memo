@@ -13,10 +13,12 @@ I think this hypothesis could be proved by using Linear Regression and its p-val
 
 Given {sales history}
 Use {Bayesian network}
-To {}
+To {Calculate the conditional probabilities}
 
 As mentioned in the lecture, cereal and milk seem obviously complementary. However, some products are less obvious. If a sales of particular product A relies on the other
-product B's sales occuring with some sort of relationship, they could be complementary product to each other and this is a kind of conditional probability.  
+product B's sales occuring with some sort of relationship, they could be complementary product to each other and this is a conditional probability.
+Let's say that the probabilities of buying product A and B are P(A), P(B). And from the number of customers who bought product A,B simultaneously, we can get P(A교B). 
+Using these probabilities, we can calculate P(A|B) and P(A|~B). If P(A|B) is greater than P(A|~B), product A and B are complementary product to each other.  
 
 3. If two complementary product types are next to each other on the shelves, then the complementary effects will be greater.  
 
