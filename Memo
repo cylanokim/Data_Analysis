@@ -1,5 +1,16 @@
+As xx said, the company has 3 hypothesis.
 
+1. The more shelf space they give a product, the more they will be sold (페러프라이즈 있나 강의 확인)
 
+Given {a data set of the amount of product sales for different shelf sizes}
+Use {Linear Regression}
+To {Calculate the coefficient of shelf size(the degree of change in the product sales for every 1-unit of change in the shelf space size in which a product has}
+
+I think this hypothesis could be proved by using Linear Regression and its p-value. If the coefficient has positive valu and its p-value is sufficiently low; may be lower than 0.05
+, we can confirm that more space for a product is valid reason to promote the sales.
+
+2. 
+------------------------------------------------------------------------------------
 
 1. the more shelf space they give a product, the more they'll sell
 given {a data set of different stores that have varying shelf sizes for different product types
