@@ -15,7 +15,8 @@ Given {sales history}
 Use {Bayesian network}
 To {}
 
-As mentioned in the lecture, cereal and milk seem obviously complementary. However, some products are less obvious.
+As mentioned in the lecture, cereal and milk seem obviously complementary. However, some products are less obvious. If a sales of particular product A relies on the other
+product B's sales occuring with some sort of relationship, they could be complementary product to each other and this is a kind of conditional probability.  
 
 3. If two complementary product types are next to each other on the shelves, then the complementary effects will be greater.  
 
