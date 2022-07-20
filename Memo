@@ -1,6 +1,9 @@
 As xx said, the company has 3 hypothesis.
+1. If bigger space were allocated for products, they are likely to be sold more.
+2. Which two or more products could be considered as complementary to each other?
+3. If two complementary product are nex to each other on the shelves, then the complementary effect will be greater. 
 
-1. The more shelf space they give a product, the more they will be sold (페러프라이즈 있나 강의 확인)
+1. The more shelf space they give a product, the more they will be sold 
 
 Given {a data set of the amount of product sales for different shelf sizes}
 Use {Linear Regression}
@@ -22,12 +25,12 @@ Using these probabilities, we can calculate P(A|B) and P(A|~B). If P(A|B) is gre
 
 3. If two complementary product types are next to each other on the shelves, then the complementary effects will be greater.  
 
-Given( {distances between complementary products (if there are more than two complementary products expected, we can use the average distance) and sales history}
+Given {The average distance between two complementary products and sales history}
 Use {Linear Regression} 
-To {calculate Pearson correlation coefficient}
+To {Calculate Pearson correlation coefficient and its p-value}
 
 If the total amount of sales for products increases as the distance between two or more complementary products decreases and the p-value is 
-sufficiently low, we can say that the adjacent complementary products will benefit retailers. 
+sufficiently low, we can say that the adjacent complementary products will benefit retailers. Furthermore, the closer they are, the more they will be sold.
 ------------------------------------------------------------------------------------
 
 1. the more shelf space they give a product, the more they'll sell
