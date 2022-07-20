@@ -1,0 +1,33 @@
+
+
+
+1. the more shelf space they give a product, the more they'll sell
+given {a data set of different stores that have varying shelf sizes for different product types
+and the amount of sales each store} 
+
+use {Linear Regression}
+
+to {calculate beta, product sales change as shelf size they give to a product change,
+the degree of change in the product sales for every 1-unit of change in the shelf space size the retailer give to a product}
+
+2. Determine which two or more products could be considered as complementary 
+As mentioned in the lecture, cereal and milk seem obviously somplementary. However, some products
+are less obvious. 
+
+2-1. linear regression
+given {sales history}
+use {Linear regression, Pearson Correalation Coefficient, confusion matrix}
+to {determine which products should be considered complementary} 
+
+2-2. Bayesian statistics 
+given {sales history}
+use {bayesian network}
+to
+
+3. If two complementary product types are next to each other on the shelves, then the complementary effects form
+(2) will be even greater  
+given( {products distance (if more than two-->average distances) and sales history}
+use {Linear Regression} 
+to {calculate Pearson correlation coefficient}
+
+각각의 가설이 사실인지 아닌지 확인하는 내용 각각 (3가지) 추가하기
