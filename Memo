@@ -9,7 +9,22 @@ To {Calculate the coefficient of shelf size(the degree of change in the product 
 I think this hypothesis could be proved by using Linear Regression and its p-value. If the coefficient has positive valu and its p-value is sufficiently low; may be lower than 0.05
 , we can confirm that more space for a product is valid reason to promote the sales.
 
-2. 
+2. Determine which two or more products could be considered as complementary 
+
+Given {sales history}
+Use {Bayesian network}
+To {}
+
+As mentioned in the lecture, cereal and milk seem obviously complementary. However, some products are less obvious.
+
+3. If two complementary product types are next to each other on the shelves, then the complementary effects will be greater.  
+
+Given( {distances between complementary products (if there are more than two complementary products expected, we can use the average distance) and sales history}
+Use {Linear Regression} 
+To {calculate Pearson correlation coefficient}
+
+If the total amount of sales for products increases as the distance between two or more complementary products decreases and the p-value is 
+sufficiently low, we can say that the adjacent complementary products will benefit retailers. 
 ------------------------------------------------------------------------------------
 
 1. the more shelf space they give a product, the more they'll sell
