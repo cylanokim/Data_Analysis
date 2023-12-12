@@ -1,0 +1,40 @@
+import sys 
+from collections import deque 
+
+M, N = map(int, input().split())
+A = [list(map(int, input().split())) for _ in range(N)]
+
+queue = deque()
+
+for r in range(N):
+    for c in range(M):
+        if A[r][c] == 1:
+            queue.append((r, c, 0))
+            A[r][c] = -1
+
+def bfs():
+    while queue:
+        # 시작점에서 day = 0
+        r, c, day = queue.popleft()
+
+        for dr, dc in zip([-1,0,1,0], [0,-1,0,1]):
+            nr, nc = r + dr, c + dc 
+            
+            if nr < 0 or nr >=N or nc < 0 or nc >= M: continue # -> continue 일 경우 for문 빠져나간다.
+            if A[nr][nc] == -1: continue # -> continue일 경우 for문 빠져나간다.
+
+            # for문 안에 여전히 있을 경우
+            queue.append((nr, nc, day+1))
+            A[nr][nc] = -1
+    
+    for a in A:
+        if a.count(0):
+            return -1 
+    return day
+
+print(bfs())
+
+
+
+
+                
