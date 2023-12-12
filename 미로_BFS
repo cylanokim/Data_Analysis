@@ -1,0 +1,46 @@
+"""  
+- split()을 넣으면 스페이스바를 통해 데이터가 구분된다.
+
+- 길 찾기 문제에서는 bfs()를 한 번만 사용 -> BFS의 결과는 항상 최단 경로를 갖는다!!
+- 단지 수 찾기 같은 문제는 for 문을 통해 bfs() 여러번 사용 
+- 얼음, 유기농 배추등의 군집이 몇 개인지 찾는 문제는 bfs()를 for 문 돌려서
+
+- bfs()를 한 번 만 사용 시에는 cnt를 que에 포함하자 
+- bfs()를 여러번 사용 시에는 cnt를 따로 사용하자
+
+- bfs()를 한 번만 사용 시에는 deque를 bfs 안에서 하자. 즉 def bfs():
+- bfs()를 여러번 사용 시에는 deque를 bfs 밖에서 하자. 즉 def bsf(sr, sc):
+"""
+from collections import deque 
+import sys 
+sys.setrecursionlimit(10**9)
+
+dr = [-1,1,0,0]
+dc = [0,0,-1,1]
+
+
+def bfs(r, c):
+    queue = deque()
+    queue.append((r,c))
+
+    while queue:
+        for i in range(4):
+            nr = r + dr[i]
+            nc = c + dc[i]
+
+            if nr < 0 or nr >= N or nc < 0 or nc >= M:
+                continue
+            if graph[nr][nc] == 0:
+                continue
+            if graph[nr][nc] == 1:
+                graph[nr][nc] = graph[r][c] + 1 
+                queue.append((nr, nc)) 
+    return graph[N-1][M-1]
+
+N, M = map(int, input().split())
+graph = []
+for _ in range(N):
+    graph.append(list(map(int, input().split()))) 
+
+print(bfs(0,0))
+
